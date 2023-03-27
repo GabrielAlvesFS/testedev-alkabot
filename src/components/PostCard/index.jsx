@@ -12,8 +12,6 @@ export const PostCard = ({
   const [loading, comments] = useFetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`);
   const [showComment, setShowComment] = useState(false);
 
-  console.log(comments);
-
   return (
     <PostCardContainer>
       <UserInfo>
